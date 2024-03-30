@@ -321,19 +321,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   thisAgent: {fileID: 156335540}
---- !u!114 &156335539
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 156335535}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c0554e0c5e3fa7540b7eb92838bc1c97, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  thisAgent: {fileID: 156335540}
 --- !u!114 &156335540
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -362,11 +349,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   actionName: GetPatient
   cost: 1
-  target: {fileID: 1000317771}
+  target: {fileID: 0}
   targetTag: 
   duration: 0
   preConditions:
   - key: Waiting
+    value: 0
+  - key: FreeCubicle
     value: 0
   afterEffects:
   - key: treatPatient
@@ -1573,7 +1562,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
   m_LocalRotation: {x: 0.26970398, y: -0.65543294, z: 0.2714892, w: 0.65112305}
-  m_LocalPosition: {x: 4, y: 15.2, z: -18.77}
+  m_LocalPosition: {x: 13.2, y: 24.4, z: -18.7}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []

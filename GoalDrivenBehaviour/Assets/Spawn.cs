@@ -15,7 +15,7 @@ public class Spawn : MonoBehaviour
             Instantiate(patientPrefab, this.transform.position, Quaternion.identity);
         }
 
-        Invoke("SpawnPatient", 5);
+        Invoke("SpawnPatient", 7);
     }
 
     void SpawnPatient()
